@@ -1,1 +1,0 @@
-print("Hell Word python")
