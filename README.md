@@ -6,7 +6,7 @@ One of the most impressive features of Axel DICE is its Auto Language Detection 
 <br><br>
 In addition to ALD, Axel DICE also features an auto-save function that automatically saves code changes in real-time. This ensures that users never lose their progress, even in the event of a power outage or system crash.
 <br><br>
-Another unique feature of Axel DICE is its Dynamic Terminal, which allows users to see the output of their program in real-time. This feature makes it easier to debug code and ensures that users get immediate feedback on their code execution.
+Another unique feature of Axel DICE is its Dynamic Terminal, which allows users to see the output of their program in real-time. This feature makes it easier to See The output of code and ensures that users get immediate feedback on their code execution.
 <br><br>
 Overall, Axel DICE is a versatile and powerful code editor that offers a range of innovative features to improve the coding experience. Its Dynamic Integrated Code Editing, Auto Language Detection, Auto-Save, and Dynamic Terminal are just a few of the features that make it a valuable tool for developers and programmers of all skill levels.
 </h3>
