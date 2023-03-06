@@ -2,7 +2,7 @@
 <h3>
 Axel DICE is an innovative code editor that enables Dynamic Integrated Code Editing (DICE) by allowing users to run their code directly without saving or compiling it. With its simple and user-friendly interface, users can write their code and execute it with just a single click of the run button. This not only saves time but also eliminates the need for manual saving and compilation.
 <br><br>
-One of the most impressive features of Axel DICE is its Auto Language Detection (ALD) feature that automatically detects the programming language being used without the need for manual selection. This feature improves the user experience and makes the code editor more efficient and effective.
+One of the most impressive features of Axel DICE is its Auto Language Detection (ALD) feature that automatically detects the programming language being used without the need for manual selection. This feature improves the user experience and makes the code editor more efficient and effective works for (c,c++,java,python).
 <br><br>
 In addition to ALD, Axel DICE also features an auto-save function that automatically saves code changes in real-time. This ensures that users never lose their progress, even in the event of a power outage or system crash.
 <br><br>
