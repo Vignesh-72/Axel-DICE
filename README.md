@@ -1,4 +1,4 @@
-# Axel-IDE
+# Axel-DICE
 <h3>
 Axel DICE is an innovative code editor that enables Dynamic Integrated Code Editing (DICE) by allowing users to run their code directly without saving or compiling it. With its simple and user-friendly interface, users can write their code and execute it with just a single click of the run button. This not only saves time but also eliminates the need for manual saving and compilation.
 <br><br>
