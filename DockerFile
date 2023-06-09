@@ -1,0 +1,13 @@
+FROM openjdk:8
+
+WORKDIR /app/axeldice
+COPY . /app/axeldice
+
+ENV JAVA_HOME = /app/axeldice/jre
+ENV PATH=$PATH:$JAVA_HOME/bin
+
+RUN echo "JAVA_HOME :" $JAVA_HOME
+RUN echo "PATH      :" $PATH
+ENTRYPOINT ["java test"]
+
+
