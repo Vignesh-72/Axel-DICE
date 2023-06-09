@@ -15,7 +15,6 @@ public class Core {
     String path = "C:\\AxelDICE\\src\\main\\java\\com\\resources\\scripts\\",filename = "C:\\AxelDICE\\src\\main\\java\\com\\resources\\DefaultFile",fileType = "txt",batchType="";
     BufferedReader buffer;
     Process process;
-    LangDetector langDetector = new LangDetector();
 
     public void fileChooser()
     {   
@@ -86,6 +85,12 @@ public class Core {
              setFileInfo(".vb", "vbbatch.bat");
          else if (source.matches("(?s).*\\b(MOV|ADD|SUB|JMP|CMP|LOOP)\\b.*"))
              setFileInfo(".asm", "assemblybatch.bat");
+        else if (source.matches("(?s).*\\b(using|namespace|class|void Main)\\b.*"))
+             setFileInfo(".cs", "csbatch.bat");
+         else if (source.matches("(?s).*\\b(SELECT|FROM|WHERE|JOIN)\\b.*"))
+             setFileInfo(".sql", "sqlbatch.bat");
+         else if (source.matches("(?s).*\\b(module|import|do|where|case)\\b.*"))
+             setFileInfo(".hs", "haskellbatch.bat");
     }
 
     public void setFileInfo(String fileType , String batchType)
