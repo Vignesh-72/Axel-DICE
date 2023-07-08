@@ -23,7 +23,7 @@ public class StartUpFrame extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
-        ImageIcon img = new javax.swing.ImageIcon("C:\\AxelDICE\\src\\main\\resources\\icons\\complierlogo.png");
+        ImageIcon img = new javax.swing.ImageIcon("C:\\axeldice\\src\\main\\resources\\icons\\complierlogo.png");
         this.setTitle("Axel");
         this.setIconImage(img.getImage());
 
@@ -77,7 +77,7 @@ public class StartUpFrame extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Lucida Console", 0, 12)); 
         jLabel2.setForeground(new java.awt.Color(25, 25, 25));
-        jLabel2.setText("Version : Beta");
+        jLabel2.setText("Version : 1.0");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

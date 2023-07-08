@@ -16,7 +16,6 @@ public class EditorFrame extends javax.swing.JFrame {
     }
 
     private void initComponents() {
-        
         jPanel2 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
@@ -30,15 +29,15 @@ public class EditorFrame extends javax.swing.JFrame {
         jSeparator3 = new javax.swing.JSeparator();
         jButton5 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        ImageIcon img = new javax.swing.ImageIcon("C:\\AxelDICE\\src\\main\\resources\\icons\\complierlogo.png");
-        this.setIconImage(img.getImage());
+        jComboBox1 = new javax.swing.JComboBox<>();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel2.setBackground(new java.awt.Color(102, 102, 102));
 
         jTextArea1.setBackground(new java.awt.Color(68, 68, 68));
         jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Monospaced", 1, 14)); 
+        jTextArea1.setFont(new java.awt.Font("Monospaced", 1, 14)); // NOI18N
         jTextArea1.setForeground(new java.awt.Color(204, 204, 204));
         jTextArea1.setRows(5);
         jTextArea1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(153, 153, 153)));
@@ -46,9 +45,12 @@ public class EditorFrame extends javax.swing.JFrame {
         jTextArea1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextArea1.setDisabledTextColor(new java.awt.Color(204, 204, 204));
         jScrollPane1.setViewportView(jTextArea1);
+        ImageIcon img = new javax.swing.ImageIcon("C:\\AxelDICE\\src\\main\\resources\\icons\\complierlogo.png");
+        this.setIconImage(img.getImage());
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jButton1.setBackground(new java.awt.Color(153, 153, 153));
-        jButton1.setFont(new java.awt.Font("Lucida Console", 0, 14)); 
+        jButton1.setFont(new java.awt.Font("Lucida Console", 0, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(51, 51, 51));
         jButton1.setText("Run");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -58,7 +60,7 @@ public class EditorFrame extends javax.swing.JFrame {
         });
 
         jButton2.setBackground(new java.awt.Color(153, 153, 153));
-        jButton2.setFont(new java.awt.Font("Lucida Console", 0, 14)); 
+        jButton2.setFont(new java.awt.Font("Lucida Console", 0, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(51, 51, 51));
         jButton2.setText("Debug");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -68,7 +70,7 @@ public class EditorFrame extends javax.swing.JFrame {
         });
 
         jButton3.setBackground(new java.awt.Color(153, 153, 153));
-        jButton3.setFont(new java.awt.Font("Lucida Console", 0, 14)); 
+        jButton3.setFont(new java.awt.Font("Lucida Console", 0, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(51, 51, 51));
         jButton3.setText("Save As");
         jButton3.setMaximumSize(new java.awt.Dimension(72, 20));
@@ -80,12 +82,12 @@ public class EditorFrame extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Lucida Console", 0, 25)); 
+        jLabel1.setFont(new java.awt.Font("Lucida Console", 0, 25)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(51, 51, 51));
         jLabel1.setText(" Axel-DICE");
 
         jButton4.setBackground(new java.awt.Color(153, 153, 153));
-        jButton4.setFont(new java.awt.Font("Lucida Console", 0, 14)); 
+        jButton4.setFont(new java.awt.Font("Lucida Console", 0, 14)); // NOI18N
         jButton4.setForeground(new java.awt.Color(51, 51, 51));
         jButton4.setText("Save\n");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -95,7 +97,7 @@ public class EditorFrame extends javax.swing.JFrame {
         });
 
         jButton5.setBackground(new java.awt.Color(153, 153, 153));
-        jButton5.setFont(new java.awt.Font("Lucida Console", 0, 12)); 
+        jButton5.setFont(new java.awt.Font("Lucida Console", 0, 12)); // NOI18N
         jButton5.setForeground(new java.awt.Color(51, 51, 51));
         jButton5.setText("Open");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -104,9 +106,19 @@ public class EditorFrame extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Lucida Console", 0, 12)); 
+        jLabel2.setFont(new java.awt.Font("Lucida Console", 0, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(56, 56, 56));
         jLabel2.setText("@Vicky");
+
+        jComboBox1.setBackground(new java.awt.Color(153, 153, 153));
+        jComboBox1.setFont(new java.awt.Font("Microsoft YaHei UI Light", 0, 12)); // NOI18N
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "No Language", "Python", "Java", "C", "C++", "C#", "GO", "Lua", "PHP", "Rust", "Dart", "Ruby", "Perl", "Cobol", "HTML", "Scala", "Haskel", "Swift", "MATLAB", "Kotlin", "Fortran", "JavaScript", "Objective-C", "Shell (Bash)", "TypeScript", "Visual Basic", "Assembly language" }));
+        jComboBox1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -118,13 +130,6 @@ public class EditorFrame extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel2Layout.createSequentialGroup()
-                                        .addGap(69, 69, 69)
-                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                                .addGap(6, 6, 6)
-                                                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addComponent(jLabel1)))
                                     .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel2Layout.createSequentialGroup()
                                         .addGap(81, 81, 81)
@@ -134,13 +139,23 @@ public class EditorFrame extends javax.swing.JFrame {
                                                 .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, 161, Short.MAX_VALUE)
                                                 .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, 161, Short.MAX_VALUE)
                                                 .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 161, Short.MAX_VALUE)
-                                                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 161, Short.MAX_VALUE)))))
-                                .addGap(70, 70, 70))
+                                                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 161, Short.MAX_VALUE))))
+                                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                        .addGap(99, 99, 99)
+                                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                        .addGap(69, 69, 69)
+                                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                                .addGap(6, 6, 6)
+                                                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(jLabel1))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 702, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(83, 83, 83)))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 48, Short.MAX_VALUE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel2)))
@@ -153,6 +168,8 @@ public class EditorFrame extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -189,7 +206,9 @@ public class EditorFrame extends javax.swing.JFrame {
             .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         this.setResizable(false);
-        pack(); 
+        pack();
+    
+       
     }
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
@@ -201,6 +220,10 @@ public class EditorFrame extends javax.swing.JFrame {
     }
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         core.start(this.jTextArea1.getText());
+        
+    }
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {
+        core.lang = jComboBox1.getSelectedItem().toString();
         
     }
 
@@ -215,32 +238,32 @@ public class EditorFrame extends javax.swing.JFrame {
     } 
     
     // main function for the EditorFrame
-    // public static void main(String args[]) {
-       
-    //     try {
-    //         for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-    //             if ("Nimbus".equals(info.getName())) {
-    //                 javax.swing.UIManager.setLookAndFeel(info.getClassName());
-    //                 break;
-    //             }
-    //         }
-    //     } catch (ClassNotFoundException ex) {
-    //         java.util.logging.Logger.getLogger(EditorFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-    //     } catch (InstantiationException ex) {
-    //         java.util.logging.Logger.getLogger(EditorFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-    //     } catch (IllegalAccessException ex) {
-    //         java.util.logging.Logger.getLogger(EditorFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-    //     } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-    //         java.util.logging.Logger.getLogger(EditorFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-    //     }
-        
-    //     java.awt.EventQueue.invokeLater(new Runnable() {
-    //         public void run() {
-    //             new EditorFrame().setVisible(true);
-            
-    //         }
-    //     });
-    // }
+     public static void main(String args[]) {
+ 
+         try {
+             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                 if ("Nimbus".equals(info.getName())) {
+                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                     break;
+                 }
+             }
+         } catch (ClassNotFoundException ex) {
+             java.util.logging.Logger.getLogger(EditorFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+         } catch (InstantiationException ex) {
+             java.util.logging.Logger.getLogger(EditorFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+         } catch (IllegalAccessException ex) {
+             java.util.logging.Logger.getLogger(EditorFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+             java.util.logging.Logger.getLogger(EditorFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+         }
+  
+         java.awt.EventQueue.invokeLater(new Runnable() {
+             public void run() {
+                 new EditorFrame().setVisible(true);
+      
+             }
+         });
+     }
 
     // Variables declaration - do not modify
     private Core core = new Core();
@@ -250,6 +273,7 @@ public class EditorFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;

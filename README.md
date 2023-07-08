@@ -21,26 +21,26 @@ Overall, Axel DICE is a versatile and powerful code editor that offers a range o
     C#<br>
     Go<br>
     C++<br>
-    Lua<br>
-    PHP<br> 
+    Lua<br>-
+    PHP<br>- 
     Rust<br>
-    Dart<br>
-    Ruby<br>
-    Perl<br>
+    Dart<br>-
+    Ruby<br>-
+    Perl<br>-
     Java<br>
-    Cobol<br>
-    HTML<br>
-    Scala<br>
-    Haskel<br>
-    Swift<br>
+    Cobol<br>-
+    HTML<br>-
+    Scala<br>-
+    Haskel<br>-
+    Swift<br>-
     Python<br>
-    MATLAB<br>
-    Kotlin<br>
-    Fortran<br>
+    MATLAB<br>-
+    Kotlin<br>-
+    Fortran<br>-
     JavaScript<br>
-    Objective-C<br>
-    Shell (Bash)<br>
-    TypeScript<br>
+    Objective-C<br>-
+    Shell (Bash)<br>-
+    TypeScript<br>-
     Visual Basic<br>
     Assembly language<br>      
 </h3>

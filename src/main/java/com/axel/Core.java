@@ -12,7 +12,7 @@ import java.io.FileReader;
 public class Core {
     
     public
-    String path = "C:\\AxelDICE\\src\\main\\java\\com\\resources\\scripts\\",filename = "C:\\AxelDICE\\src\\main\\java\\com\\resources\\DefaultFile",fileType = "txt",batchType="";
+    String path = "C:\\AxelDICE\\src\\main\\java\\com\\resources\\scripts\\",filename = "C:\\AxelDICE\\src\\main\\java\\com\\resources\\DefaultFile",fileType = "txt",batchType="",lang="null";
     BufferedReader buffer;
     Process process;
 
@@ -31,74 +31,79 @@ public class Core {
         System.out.println("Ended FileChooser Successfully...");
     }
 
-    public void languageDetector(String source)
+    public void languageDetector()
     {
         System.out.println("Language Detector Started");
+        System.out.println("Lang"+this.lang);
         filename = "C:\\AxelDICE\\src\\main\\java\\com\\resources\\DefaultFile";
-         if (source.matches("(?s).*\\b(#include|printf|scanf)\\b.*"))
-             setFileInfo(".c", "cbatch.bat");
-         else if (source.matches("(?s).*\\b(#include|R\\.)\\b.*"))
-             setFileInfo(".R", "rbatch.bat");
-         else if (source.matches("(?s).*\\b(package|func|var|const)\\b.*"))
-             setFileInfo(".go", "gobatch.bat");
-         else if (source.matches("(?s).*\\b(#include|std::cout|<<|>>|std::|std::cin|printf|scanf)\\b.*"))
+        if(this.lang == "No Language")
+            return;
+        if (this.lang == "C++")
              setFileInfo(".cpp", "cppbatch.bat");
-         else if (source.matches("(?s).*\\b(function|if|else|end|local)\\b.*"))
-             setFileInfo(".lua", "luabatch.bat");
-         else if (source.matches("(?s).*\\b(<\\?php|echo|class|function)\\b.*"))
-             setFileInfo(".php", "phpbatch.bat");
-         else if (source.matches("(?s).*\\b(fn|let|println!|match|use)\\b.*"))
-             setFileInfo(".rs", "rsbatch.bat");
-         else if (source.matches("(?s).*\\b(import|class|void|main|print)\\b.*"))
-             setFileInfo(".dart", "dartbatch.bat");
-         else if (source.matches("(?s).*\\b(class|def|module|end|puts)\\b.*"))
-             setFileInfo(".rb", "rubybatch.bat");
-         else if (source.matches("(?s).*\\b(use|sub|print|if|foreach)\\b.*"))
-             setFileInfo(".pl", "perlbatch.bat");
-         else if (source.matches("(?s).*\\b(public static void main|Scanner|import java.|javax|System\\.out\\.println)\\b.*"))
-             setFileInfo(".java", "javabatch.bat");
-         else if (source.matches("(?s).*\\b(IDENTIFICATION DIVISION|PROCEDURE DIVISION|DISPLAY|COMPUTE)\\b.*"))
-             setFileInfo(".cobol", "cobolbatch.bat");
-         else if (source.matches("(?s).*\\b(<html>|<body>|<head>|<script>|console\\.)\\b.*"))
-             setFileInfo(".html", "htmlbatch.bat");
-         else if (source.matches("(?s).*\\b(import scala\\.|def|val|var|class|object)\\b.*"))
-             setFileInfo(".scala", "scalabatch.bat");
-         else if (source.matches("(?s).*\\b(import Swift|func|var|let|class)\\b.*"))
-             setFileInfo(".swift", "swiftbatch.bat");
-         else if (source.matches("(?s).*\\b(import|from|def|print|range|len|input|sys\\.)\\b.*"))
+          if (this.lang == "C")
+             setFileInfo(".c", "cbatch.bat");
+          if (this.lang == "Python")
              setFileInfo(".py", "pybatch.bat");
-         else if (source.matches("(?s).*\\b(function|if|for|while|plot)\\b.*"))
+          if (this.lang == "R")
+             setFileInfo(".r", "rbatch.bat");
+          if (this.lang == "Go")
+             setFileInfo(".go", "gobatch.bat");
+          if (this.lang == "Lua")
+             setFileInfo(".lua", "luabatch.bat");
+          if (this.lang == "PHP")
+             setFileInfo(".php", "phpbatch.bat");
+          if (this.lang == "Rust")
+             setFileInfo(".rs", "rsbatch.bat");
+          if (this.lang == "Dart")
+             setFileInfo(".dart", "dartbatch.bat");
+          if (this.lang == "Ruby")
+             setFileInfo(".rb", "rubybatch.bat");
+          if (this.lang == "Perl")
+             setFileInfo(".pl", "perlbatch.bat");
+          if (this.lang == "Java")
+             setFileInfo(".java", "javabatch.bat");
+          if (this.lang == "Cobol")
+             setFileInfo(".cobol", "cobolbatch.bat");
+          if (this.lang == "HTML")
+             setFileInfo(".html", "htmlbatch.bat");
+          if (this.lang == "Scala")
+             setFileInfo(".scala", "scalabatch.bat");
+          if (this.lang == "Swift")
+             setFileInfo(".swift", "swiftbatch.bat");
+          if (this.lang == "MATLAB")
              setFileInfo(".m", "matlabbatch.bat");
-         else if (source.matches("(?s).*\\b(import|fun|var|class)\\b.*"))
+          if (this.lang == "Kotlin")
              setFileInfo(".kt", "ktbatch.bat");
-         else if (source.matches("(?s).*\\b(PROGRAM|INTEGER|REAL|WRITE|READ)\\b.*"))
+          if (this.lang == "Fortran")
              setFileInfo(".f90", "fortranbatch.bat");
-         else if (source.matches("(?s).*\\b(console\\.|function|require|module\\.exports)\\b.*"))
+          if (this.lang == "JavaScript")
              setFileInfo(".js", "jsbatch.bat");
-         else if (source.matches("(?s).*\\b(#import|@interface|@implementation|@property|NSLog)\\b.*"))
-             setFileInfo(".m", "objcbatch.bat");
-         else if (source.matches("(?s).*\\b(/usr|bin|bash||echo|read|cat|<<|wc|cd|ls|$|#!|; do|echo $|;;|-eq|grep|cwd)\\b.*"))
+          if (this.lang == "Objective-C")
+             setFileInfo(".ob", "objcbatch.bat");
+          if (this.lang == "Shell (Bash)")
              setFileInfo(".sh", "bashshell.bat");
-         else if (source.matches("(?s).*\\b(import|export|class|function|interface)\\b.*"))
+          if (this.lang == "TypeScript")
              setFileInfo(".ts", "tsbatch.bat");
-         else if (source.matches("(?s).*\\b(Imports|Module|Sub|Function|Console\\.WriteLine|End)\\b.*"))
+          if (this.lang == "Visual Basic")
              setFileInfo(".vb", "vbbatch.bat");
-         else if (source.matches("(?s).*\\b(MOV|ADD|SUB|JMP|CMP|LOOP)\\b.*"))
+          if (this.lang == "Assembly language")
              setFileInfo(".asm", "assemblybatch.bat");
-        else if (source.matches("(?s).*\\b(using|namespace|class|void Main)\\b.*"))
+         if (this.lang == "C#")
              setFileInfo(".cs", "csbatch.bat");
-         else if (source.matches("(?s).*\\b(SELECT|FROM|WHERE|JOIN)\\b.*"))
+          if (this.lang == "SQL")
              setFileInfo(".sql", "sqlbatch.bat");
-         else if (source.matches("(?s).*\\b(module|import|do|where|case)\\b.*"))
+          if (this.lang == "Haskel")
              setFileInfo(".hs", "haskellbatch.bat");
     }
 
     public void setFileInfo(String fileType , String batchType)
     {
         System.out.println("Detected : "+fileType.substring(1));
+        this.fileType =fileType;
         filename = filename.concat(fileType);
         this.batchType = batchType;
     }
+   
 
     public void saveAs(String Result)
     {
@@ -197,7 +202,7 @@ public class Core {
     public void start(String source)
     {
         System.out.println("Axel Started");
-        languageDetector(source);
+        languageDetector();
         fileWriter(source);
         try 
         {
