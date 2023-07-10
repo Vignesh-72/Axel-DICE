@@ -31,13 +31,21 @@ public class Core {
         System.out.println("Ended FileChooser Successfully...");
     }
 
-    public void languageDetector()
+    public void languageDetector(String source)
     {
         System.out.println("Language Detector Started");
+        System.out.println("source:"+source+":sdaasd");
         System.out.println("Lang"+this.lang);
         filename = "C:\\AxelDICE\\src\\main\\java\\com\\resources\\DefaultFile";
-        if(this.lang == "No Language")
-            return;
+        if(this.lang.contains("null"))
+            if (source.matches("(?s).*\\b(public static void main|Scanner|import java.|javax|System\\.out\\.println)\\b.*")) 
+               setFileInfo(".java", "javabatch.bat");
+            else if (source.matches("(?s).*\\b(def|print|range|in|:)\\b.*")) 
+               setFileInfo(".py", "pybatch.bat");
+            else if (source.matches("(?s).*\\b(#include|std::cout|<<|>>|std::|std::cin|printf|scanf)\\b.*")) 
+               setFileInfo(".cpp", "cppbatch.bat");
+            else
+               return;
         if (this.lang == "C++")
              setFileInfo(".cpp", "cppbatch.bat");
           if (this.lang == "C")
@@ -202,7 +210,7 @@ public class Core {
     public void start(String source)
     {
         System.out.println("Axel Started");
-        languageDetector();
+        languageDetector(source);
         fileWriter(source);
         try 
         {

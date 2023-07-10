@@ -18,14 +18,14 @@ public class CoreTest {
         for(int i = 0 ; i < langArr.length ; i++){
             System.out.println("Lang :"+langArr[i]+" Extension : "+extensions[i]);
             core.lang = langArr[i];
-            core.languageDetector();
+            core.languageDetector("Test Case");
             Assert.assertEquals(extensions[i], core.fileType);
         }
     }
     public static void main(String args[]){
         Core core = new Core();
         core.lang = "Go";
-        core.languageDetector();
+        core.languageDetector("Test Case");
         System.out.println("Extension : "+core.fileType);
 
     }

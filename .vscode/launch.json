@@ -6,23 +6,10 @@
     "configurations": [
         {
             "type": "java",
-            "name": "CoreTest",
-            "request": "launch",
-            "mainClass": "axel.CoreTest",
-            "projectName": "axeldice"
-        },
-        {
-            "type": "java",
             "name": "EditorFrame",
             "request": "launch",
             "mainClass": "com.axel.EditorFrame",
             "projectName": "axeldice"
-        },
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}"
         },
         {
             "type": "java",
