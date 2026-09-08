@@ -1,73 +1,105 @@
-<div align="center" >
-  <h1>Axel-DICE Code Editor💻🎲 <img src="https://img.shields.io/sourceforge/dt/axel-dice" alt="SourceForge Downloads"></h1>
-  
+<div align="center">
+
+# Axel-DICE Code Editor 💻🎲
+**Dynamic Integrated Code Editing with Instant Execution & Zero-Setup Environment**
+
+[![SourceForge Downloads](https://img.shields.io/sourceforge/dt/axel-dice?style=for-the-badge&logo=sourceforge&logoColor=white&color=EE6600)](https://sourceforge.net/projects/axel-dice/)
+[![Version](https://img.shields.io/badge/Release-v1.0-blue?style=for-the-badge)](https://sourceforge.net/projects/axel-dice/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+
+<br />
+
+**Axel-DICE** is a lightweight, zero-configuration desktop code editor designed around the **Dynamic Integrated Code Editing (DICE)** paradigm. Write code and execute it immediately with a single click—eliminating manual compilation steps, workspace configuration, and tedious project scaffolding.
+
 </div>
 
-<p>🍀Axel DICE is an innovative code editor that enables Dynamic Integrated Code Editing (DICE) by allowing users to run their code directly without saving or compiling it. With its simple and user-friendly interface, users can write their code and execute it with just a single click of the run button. This not only saves time but also eliminates the need for manual saving and compilation. ⚡️</p>
+---
 
-<p>🌈 The app is designed to be lightweight and fast, with minimal setup time required. Once installed, the user can immediately start coding without the need to configure any settings or install any additional software. 🚀</p>
+## 📥 Downloads & Distribution
 
-<p>🦾 One of the most impressive features of Axel DICE is its Auto Language Detection (ALD) feature that automatically detects the programming language being used without the need for manual selection. This feature improves the user experience and makes the code editor more efficient and practical. It works for languages like C, C++, Java, and Python. 🔍</p>
+Pre-built binaries and project releases are available on SourceForge:
 
-<p>❄️In addition to ALD, Axel DICE also features an auto-save function that automatically saves code changes in real-time. 💾</p>
+👉 **[Download Axel-DICE on SourceForge](https://sourceforge.net/projects/axel-dice/)**
 
-<p>🍺Another unique feature of Axel DICE is its Dynamic Terminal, which allows users to see their program's output in real-time. This feature makes it easier to see the code output and ensures that users get immediate feedback on their code execution. 📝</p>
+---
 
-<p>☄️ Overall, Axel DICE is a versatile and powerful code editor that offers a range of innovative features to improve the coding experience. Its Dynamic Integrated Code Editing, Auto Language Detection, Auto-Save, and Dynamic Terminal are just a few of the features that make it a valuable tool for developers and programmers of all skill levels. 💪</p>
+## 📑 Table of Contents
 
+- [Key Features](#-key-features)
+- [Supported Languages](#-supported-languages)
+- [Interface Preview & Quickstart](#-interface-preview--quickstart)
+- [Workflow Overview](#-workflow-overview)
+- [Authors & Contact](#-authors--contact)
 
-<h2>Language Support 🌐</h2>
+---
 
-<ul>
-  <li>C 🅒</li>
-  <li>R 📊</li>
-  <li>C# #️⃣</li>
-  <li>Go 🐹</li>
-  <li>C++ ➕➕</li>
-  <li>Lua 🌙</li>
-  <li>PHP 🐘</li>
-  <li>Rust 🦀</li>
-  <li>Dart 🎯</li>
-  <li>Ruby 💎</li>
-  <li>Perl 🐪</li>
-  <li>Java ☕</li>
-  <li>Cobol ☁️</li>
-  <li>HTML 🌐</li>
-  <li>Scala 🚀</li>
-  <li>Haskell λ</li>
-  <li>Swift 🐦</li>
-  <li>Python 🐍</li>
-  <li>MATLAB 📊</li>
-  <li>Kotlin 🐆</li>
-  <li>Fortran 🧮</li>
-  <li>JavaScript 🌐</li>
-  <li>Objective-C 🍏</li>
-  <li>Shell (Bash) 🐚</li>
-  <li>TypeScript 🌐💼</li>
-  <li>Visual Basic ⌨️</li>
-  <li>Assembly language 🔧</li>
-</ul>
-<br>
-<h2>Preview & How To Use</h2>
+## ✨ Key Features
 
-![s1](https://github.com/Vignesh-72/Axel-DICE/assets/107568580/206a1d2e-f7b4-4f15-a12f-d762d2efe236)
+* **⚡ Instant Execution (DICE):** Run multi-language code snippets on the fly without having to manually save, configure build tasks, or execute manual compiler commands.
+* **🔍 Auto Language Detection (ALD):** Automatically parses syntax patterns to detect popular languages (including C, C++, Java, and Python) without requiring manual dropdown selection.
+* **💾 Real-Time Auto-Save:** Automatically persists scratchpad modifications in real time, preventing loss of progress.
+* **🖥️ Dynamic Integrated Terminal:** Embedded runtime terminal provides immediate feedback and standard I/O display directly inside the interface.
+* **🚀 Zero-Configuration Portable Setup:** Minimal dependencies, rapid boot time, and immediate out-of-the-box readiness for rapid testing and scripting.
 
-<ul>
-<li><h4>Press The Lauch DICE Button To Open The Code Editor </h4></li>
-</ul>
+---
 
-![s2](https://github.com/Vignesh-72/Axel-DICE/assets/107568580/ac4fa915-ce39-4018-b6a3-9e77cb49be62)
+## 🌐 Supported Languages
 
-<ul>
-<li><h4>Then The Code Editor Will Appear As Shown, I Have Written A Example C++ Code In It</h4></li>
-<li><h4><b>You Can See A Select Box On Left Side Above The Run Button Which Will Be Used To Select The Programming Language You Want To Use. By Default  C, C++, Java, and Python Are Automatically Detected No Need To Select them </b></h4></li>
-<li><h4>After Writing The Code Press Run Button To Run</h4></li>
-</ul>
-<h3>After Pressing Run</h3>
+Axel-DICE supports over 25 languages for rapid authoring and execution:
 
-![s3](https://github.com/Vignesh-72/Axel-DICE/assets/107568580/823e1bbe-0245-4048-bad6-cf885f5c0ccc)
+| Systems & Native | Web & Modern | Scripting & Dynamic | Enterprise & Functional | Legacy & Scientific |
+| :--- | :--- | :--- | :--- | :--- |
+| • C <br>• C++ <br>• Rust <br>• Assembly (x86) | • TypeScript <br>• JavaScript <br>• HTML | • Python <br>• Ruby <br>• PHP <br>• Lua <br>• Perl <br>• Bash / Shell | • Java <br>• C# <br>• Kotlin <br>• Go <br>• Swift <br>• Dart <br>• Scala | • R <br>• MATLAB <br>• Haskell <br>• Fortran <br>• COBOL <br>• Visual Basic |
 
-<ul>
-<li><h4>The Output Will Be Show In A Terminal </h4></li>
-</ul>
+---
 
+## 🖥️ Interface Preview & Quickstart
+
+### 1. Launchpad
+Launch Axel-DICE and click **Launch DICE** on the startup screen to initialize the editor workspace:
+
+<div align="center">
+  <img src="https://github.com/Vignesh-72/Axel-DICE/assets/107568580/206a1d2e-f7b4-4f15-a12f-d762d2efe236" alt="Axel-DICE Launcher" width="650" />
+</div>
+
+---
+
+### 2. Code Editor Workspace
+Paste or write your source code in the main editor area. 
+
+* **Smart Detection:** C, C++, Java, and Python are detected automatically upon typing.
+* **Manual Override:** For other target languages, use the language selector dropdown situated directly above the **Run** button.
+
+<div align="center">
+  <img src="https://github.com/Vignesh-72/Axel-DICE/assets/107568580/ac4fa915-ce39-4018-b6a3-9e77cb49be62" alt="Editor Workspace" width="700" />
+</div>
+
+---
+
+### 3. Integrated Real-Time Output
+Click the **Run** button. Axel-DICE handles compilation and execution under the hood, streaming `stdout` and `stderr` directly to the output console:
+
+<div align="center">
+  <img src="https://github.com/Vignesh-72/Axel-DICE/assets/107568580/823e1bbe-0245-4048-bad6-cf885f5c0ccc" alt="Dynamic Terminal Execution" width="700" />
+</div>
+
+---
+
+## 🔄 Workflow Overview
+
+```plaintext
+┌───────────────────┐      ┌─────────────────────────┐      ┌─────────────────────┐
+│   Write Snippet   │ ───► │  Auto Language Detect   │ ───► │   Click "Run"       │
+│  (Zero Scaffold)  │      │ (C, C++, Java, Python)  │      │ (Instant Execution) │
+└───────────────────┘      └─────────────────────────┘      └──────────┬──────────┘
+                                                                       │
+                                                                       ▼
+                                                            ┌─────────────────────┐
+                                                            │  Dynamic Terminal   │
+                                                            │   (Instant Output)  │
+                                                            └─────────────────────┘
+```
+---
+## 👤 Author & Contact
+
+- **Vignesh S** — [@Vicky](https://www.instagram.com/vicky__v72/)
